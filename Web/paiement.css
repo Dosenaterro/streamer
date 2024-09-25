@@ -1,0 +1,127 @@
+/* Style de la page */
+.rec {
+    width: 1050px; height: auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.liner {
+    display: flex;
+    flex-direction: row;
+}
+.info {
+    width: 250px;
+    height: 65px;
+    background-color: #9200AC;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+.infoAnswer {
+    width: auto;
+    height: 65px;
+    margin-right: 50px;
+    padding: 0px 20px;
+    background-color: #F5F5F5;
+    color: black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+/* Style des moyens de paiement */
+.tt {
+    font-weight: bold;
+    margin-left: 20px;
+    color: #9200AC;
+    display: flex;
+    justify-content: center;
+}
+.info {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+    font-size: 25px;
+}
+.method {
+    background-color: #F5F5F5;
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+.method:hover {
+    background-color: #00bb00;
+    color: white;
+}
+.logo-paie {
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    border-radius: 10px;
+}
+.text {
+    display: flex;
+    justify-content: center;
+}
+.modesPaie {
+    display: flex;
+    flex-direction: column;
+}
+.modePaie {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.montant-choisi {
+    display: flex;
+    justify-content: center;
+}
+/* Style de la boîte du reçu */
+label[for="recu"] {
+    display: flex;
+    justify-content: center;
+}
+.recu {
+    background-color: #F5F5F5;
+    width: auto;
+    height: 150px;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#recu-text {
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0.5;
+}
+#check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.checkbox {
+    width: 20px;
+    height: 20px;
+    border: #9200AC 1px;
+    border-radius: 10px;
+}
+.checkbox:checked {
+    background-color: #9200AC;
+}
