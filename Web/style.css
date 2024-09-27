@@ -273,7 +273,7 @@ footer title {
     /* Footer */
     #footer {
         height: auto;
-        max-width: 1000px;
+        max-width: 500px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -285,6 +285,6 @@ footer title {
     }
     .footer-col {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
 }
