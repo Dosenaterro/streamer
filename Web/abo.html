@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" lang="fr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streamer</title>
+    <link rel="stylesheet" type="text/css" href="abo.css">
+    <link rel="icon" type="image/svg" href="icon/favicon.svg">
+    <script src="script.js"></script>
+    <script src="abo.js"></script>
+    <link rel="stylesheet" type="text/css" href="preloader.html">
+    <script>
+        function selectMois(months) {
+            localStorage.setItem('selectedMonths', months);
+        };
+        function selectEcran(ecran) {
+            localStorage.setItem('selectedEcran', ecran);
+        };
+        function selectType(type) {
+            localStorage.setItem('selectedType', type);
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <!--Les différentes étapes de la souscription-->
+        <div class="steps">
+            <div class="step">
+                <div class="step-num">1</div>
+                <div class="step-nom">Forfait</div>
+            </div>
+            <div class="step-unselected">
+                <div class="step">
+                    <div class="step-num">2</div>
+                    <div class="step-nom">Paiement</div>
+                </div>
+                <div class="step">
+                    <div class="step-num">3</div>
+                    <div class="step-nom">Connexion</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+    <!--Type de forfait-->
+        <div id="forfait-types">
+            <p id="tf">Type de forfait</p>
+            <div class="forfait-type">
+                <div class="forfait-type-title" onclick="selectType(essentiel)" id="essentiel">Essentiel</div>
+                <div class="forfait-type-title" onclick="selectType(vip)" id="vip">VIP</div>
+            </div>
+        </div>
+        <ol type="1" id="hb">
+            <li class="li">Choisir le <u>type de forfait</u></li>
+            <li class="li">Sélectionner le <u>nombre d'écrans</u> ensuite le <u>nombre de mois</u> que vous souhaitez souscrire.</li>
+        </ol>
+    <!--Info sur le forfait choisi-->
+        <div class="forfait">
+            <div class="l-info">
+                    <!--Nombre d'appareils-->
+                    <div class="n-appareils">
+                        <h3 id="ecran1" onclick="selectEcran(1)">1 &eacute;cran</h3>
+                        <h3 id="ecran2" onclick="selectEcran(2)">2 &eacute;crans</h3>
+                    </div>
+
+                    <!--Les avantages-->
+                    <div class="avantages">
+                        <ul id="avantages">
+                        <li id="avantage1"></li>
+                        <li id="avantage2"></li>
+                        <li id="avantage3"></li>
+                        <li id="avantage4"></li>
+                        <li id="avantage5"></li>
+                        <li id="avantage6"></li>
+                        <li id="avantage7"></li>
+                        </ul>
+                    </div>
+            </div>
+
+            <div class="r-info">
+                <div>
+                    <div class="tarif" onclick="selectMois(1)">
+                        <div class="descript">
+                            <p class="description2Spot"></p>
+                        </div>
+                        <p class="devise"></p>
+                        <p class="prix" id="prix01"></p>
+                    </div>
+                    <div class="tarif"  onclick="selectMois(2)">
+                                <div class="descript">
+                                    <p class="description3Spot"></p>
+                                </div>
+                                <p class="devise"></p>
+                                <p class="prix" id="prix02"></p>
+                    </div>
+                    <div class="tarif"  onclick="selectMois(3)">
+                                <div class="descript">
+                                    <p class="description5Spot"></p>
+                                </div>
+                                <p class="devise"></p>
+                                <p class="prix" id="prix03"></p>
+                    </div>
+                    <div class="tarif"  onclick="selectMois(5)">
+                                <div class="descript">
+                                    <p class="description8Spot"></p>
+                                </div>
+                                <p class="devise"></p>
+                                <p class="prix" id="prix04"></p>
+                    </div>
+                    <div class="tarif"  onclick="selectMois(6)">
+                                <div class="descript">
+                                    <p class="description10Spot"></p>
+                                </div>
+                                <p class="devise"></p>
+                                <p class="prix" id="prix05"></p>
+                    </div>
+                    <div class="tarif"  onclick="selectMois(12)">
+                        <div class="descript">
+                            <p class="description20Spot"></p>
+                        </div>
+                        <p class="devise"></p>
+                        <p class="prix" id="prix06"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="hr"></p>
+
+        <!--Rappel au client du montant de la souscription choisi-->
+        <div class="montant-choisi">
+            <p>Total</p>
+            <div class="montant" onload="dataselection()">
+                <p class="devise"></p>
+                <p id="prixM"></p>
+            </div>
+        </div>
+        <a id="step-btn" class="step-btn" href="paiement.html">Suivant</a>
+    </main>
+</body>
+</html>
