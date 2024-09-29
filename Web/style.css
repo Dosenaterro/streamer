@@ -17,6 +17,8 @@ main {
     margin-top: 15px;
     margin-left: 270px;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
 }
 a {text-decoration: none;}
 .link {color: #9200AC}
@@ -86,9 +88,10 @@ header #l-nav a {color:#9200AC;}
 /* Main */
     /* Banner */
 #banner, #bannern, #bannerc, #bannerm, #banners {
-    width: 100%;
+    width: 1050px;
     height: 400px;
     border-radius: 20px;
+    margin-top: 3px;
 }
 #banner {background: url(banner.png) lightgray 50% / cover no-repeat}
 #bannern {background: url(bannern.jpg) lightgray 50% / cover no-repeat;}
@@ -289,7 +292,7 @@ footer title {
     #banner, #bannern, #bannerc, #bannerm, #banners {
         margin-top: -10px;
         height: 350px;
-        max-width: 500px;
+        max-width: 700px;
     }
 
     /* Articles */
@@ -336,5 +339,34 @@ footer title {
     #footer .icon {
         width: 20px;
         height: 20px;
+    }
+}
+
+/* Tablette */
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+    /*Invisible*/
+    #l-nav, #t-nav {
+        display: none;
+    }
+    #logo-respo {
+        width: 190px;
+        height: 42px;
+    }
+    #menu-respo {
+        width: 40px;
+        height: 40px;
+        margin-left: 210px;
+    }
+    #responsive-menu {
+        background-color: white;
+        width: 450px;
+        height: auto;
+        padding: 20px;
+        border-radius: 20px;
+        margin-left: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 }
