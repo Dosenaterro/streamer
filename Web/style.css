@@ -242,9 +242,8 @@ footer title {
 /* Media queries */
 
 /* Smartphones */
-    /* Portrait 1 */
-    /* Portrait 2 */
-@media only screen and (min-width: 481px) and (max-width: 800px) {
+    /* Portrait */
+@media screen and (max-width: 800px) {
     /* Header */
     #logo-respo {
         width: 190px;
@@ -344,6 +343,5 @@ footer title {
         height: 20px;
     }
 }
-    /* Landscape */
-    
+
 /* Tablette */
