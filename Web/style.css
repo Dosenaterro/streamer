@@ -252,11 +252,11 @@ footer title {
     #menu-respo {
         width: 30px;
         height: 30px;
-        margin-left: 220px;
+        margin-left: 200px;
     }
     #responsive-menu {
         background-color: white;
-        width: 420px;
+        width: auto;
         height: auto;
         padding: 20px;
         margin: 1px;
@@ -298,7 +298,7 @@ footer title {
     #banner, #bannern, #bannerc, #bannerm, #banners {
         margin-top: 10px;
         margin-left: -11px;
-        width: 465px;
+        width: 430px;
         height: 200px;
     }
 
@@ -310,23 +310,17 @@ footer title {
         margin-left: -20px;
     }
     .produit {
-        text-align: center;
-        margin-top: 20px;
         border-radius: 20px;
-        width: 200px;
+        width: 185px;
         height: auto;
-        margin: 16px;
+        margin: 15px;
     }
     
     /*Pre-foot*/
-    .page {
-        margin-left: -350px;
-    }
     /* Footer */
     #footer {
         height: auto;
-        width: 442px;
-        max-width: 455px;
+        max-width: 408px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -339,19 +333,19 @@ footer title {
         padding-top: 20px;
     }
     .footer-col {
-        font-size: 15px;
+        font-size: 12px;
         margin-bottom: 0%;
         width: 100%;
         text-align: left;
     }
     .footer a {
-        font-size: 15px;
+        font-size: 11px;
     }
     .footer li {
         margin: 5px;
     }
     .footer-col ul {
-        padding: 10px;
+        padding: 1px;
         display: flex;
         flex-direction: column;
     }
