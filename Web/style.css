@@ -252,17 +252,15 @@ footer title {
     #menu-respo {
         width: 30px;
         height: 30px;
-        margin-left: auto;
-        margin-right: 10px;
+        margin-left: 220px;
     }
     #responsive-menu {
         background-color: white;
-        width: 90%;
-        max-width: 450px;
+        width: 420px;
         height: auto;
         padding: 20px;
+        margin: 1px;
         border-radius: 20px;
-        margin: 10px auto;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -272,7 +270,7 @@ footer title {
         display: flex;
         align-items: center;
         margin-bottom: auto;
-        flex-direction: column;
+        flex-direction: row;
     }
     #responsive-menu a {
         color: #9200AC;
@@ -298,9 +296,10 @@ footer title {
         display: none;
     }
     #banner, #bannern, #bannerc, #bannerm, #banners {
-        margin-top: -10px;
+        margin-top: 10px;
+        margin-left: -11px;
+        width: 465px;
         height: 200px;
-        max-width: 100%;
     }
 
     /* Articles */
@@ -308,27 +307,31 @@ footer title {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-left: -20px;
     }
-    .produit, .produit-b {
+    .produit {
         text-align: center;
         margin-top: 20px;
         border-radius: 20px;
-        width: 90%;
-        max-width: 300px;
+        width: 200px;
         height: auto;
-        padding: 10px;
-        margin: 10px 0;
+        margin: 16px;
     }
     
+    /*Pre-foot*/
+    .page {
+        margin-left: -350px;
+    }
     /* Footer */
     #footer {
         height: auto;
-        width: 90%;
+        width: 442px;
         max-width: 455px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 10px auto;
+        margin-top: 10px;
+        margin-left: 0%;
         padding: 10px;
     }    
     .logo-footer {
@@ -339,22 +342,18 @@ footer title {
         font-size: 15px;
         margin-bottom: 0%;
         width: 100%;
-        text-align: center;
+        text-align: left;
     }
     .footer a {
         font-size: 15px;
     }
     .footer li {
-        margin-bottom: 10px;
+        margin: 5px;
     }
     .footer-col ul {
-        padding: 0px;
+        padding: 10px;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .footer-col li {
-        margin: 5px 10px;
+        flex-direction: column;
     }
     #footer .icon {
         width: 20px;
