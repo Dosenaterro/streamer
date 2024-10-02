@@ -303,6 +303,9 @@ footer title {
     }
 
     /* Articles */
+    .article {
+        padding-top: -15px;
+    }
     .produits {
         display: flex;
         flex-direction: column;
@@ -320,7 +323,7 @@ footer title {
     /* Footer */
     #footer {
         height: auto;
-        max-width: 408px;
+        max-width: 410px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -333,16 +336,14 @@ footer title {
         padding-top: 20px;
     }
     .footer-col {
-        font-size: 12px;
-        margin-bottom: 0%;
-        width: 100%;
+        font-size: 10px;
         text-align: left;
     }
     .footer a {
         font-size: 11px;
     }
     .footer li {
-        margin: 5px;
+        text-align: left;
     }
     .footer-col ul {
         padding: 1px;
@@ -354,4 +355,3 @@ footer title {
         height: 20px;
     }
 }
-/* Tablette */
