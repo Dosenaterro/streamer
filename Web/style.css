@@ -322,7 +322,7 @@ footer title {
     /* Footer */
     #footer {
         height: 250px;
-        max-width: 404px;
+        max-width: 403px;
         display: flex;
         flex-direction: column;
         margin-top: 10px;
