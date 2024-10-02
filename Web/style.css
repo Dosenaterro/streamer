@@ -256,7 +256,7 @@ footer title {
     }
     #responsive-menu {
         background-color: white;
-        width: auto;
+        width: 400px;
         height: auto;
         padding: 20px;
         margin: 1px;
@@ -296,10 +296,10 @@ footer title {
         display: none;
     }
     #banner, #bannern, #bannerc, #bannerm, #banners {
-        margin-top: 10px;
+        margin-top: 90px;
         margin-left: -11px;
-        width: 430px;
-        height: 200px;
+        width: 444px;
+        height: 300px;
     }
 
     /* Articles */
@@ -310,34 +310,31 @@ footer title {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-left: -20px;
     }
     .produit {
         border-radius: 20px;
         width: 185px;
         height: auto;
-        margin: 15px;
+        margin-right: 15px;
     }
     
     /*Pre-foot*/
     /* Footer */
     #footer {
-        height: auto;
-        max-width: 410px;
+        height: 250px;
+        max-width: 404px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         margin-top: 10px;
         margin-left: 0%;
-        padding: 10px;
     }    
     .logo-footer {
-        margin: auto;
-        padding-top: 20px;
+        margin: 0px;
     }
     .footer-col {
         font-size: 10px;
         text-align: left;
+        margin-left: -30px;
     }
     .footer a {
         font-size: 11px;
@@ -346,7 +343,6 @@ footer title {
         text-align: left;
     }
     .footer-col ul {
-        padding: 1px;
         display: flex;
         flex-direction: column;
     }
@@ -355,3 +351,4 @@ footer title {
         height: 20px;
     }
 }
+/* Tablette */
