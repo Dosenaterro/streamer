@@ -257,7 +257,7 @@ footer title {
     }
     #responsive-menu {
         background-color: white;
-        width: 388px;
+        width: 384px;
         height: auto;
         padding: 20px;
         margin: 1px;
@@ -300,7 +300,7 @@ footer title {
     #banner, #bannern, #bannerc, #bannerm, #banners {
         margin-top: 90px;
         margin-left: -11px;
-        max-width: 438px;
+        max-width: 437px;
         height: 300px;
     }
 
@@ -341,12 +341,10 @@ footer title {
     .footer a {
         font-size: 11px;
     }
-    .footer li {
-        text-align: left;
-    }
     .footer-col ul {
         display: flex;
         flex-direction: column;
+        margin-left: -20px;
     }
     #footer .icon {
         width: 20px;
