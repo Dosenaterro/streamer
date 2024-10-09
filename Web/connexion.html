@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="stylesheet" type="text/css" href="abo.css">
+    <link rel="icon" type="image/svg" href="icon/favicon.svg">
+    <script src="abo.js"></script>
+    <script src="paiement.js"></script>
+    <link rel="stylesheet" type="text/css" href="paiement.css">
+    <script src="script.js"></script>
+    <style>
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        input {
+            font-size: 15px;
+            background-color: #F5F5F5;
+            color: black;
+            border: #9200AC 2px solid;
+            padding: 10px;
+            width: 400px;
+            height: 30px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.5s;
+        }
+        input:focus {
+            outline: none;
+        }
+        #votreId {
+            background-color: #9200AC;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <!--Les différentes étapes de la souscription-->
+    <div class="steps">
+        <div class="step-unselected">
+            <div class="step">
+                <div class="step-num">1</div>
+                <div class="step-nom">Forfait</div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div class="step-nom">Paiement</div>
+            </div>
+        </div>
+        <div class="step">
+                <div class="step-num">3</div>
+                <div class="step-nom">Connexion</div>
+        </div>
+    </div>
+    </header>
+    <main>
+        <div class="rec">
+        <form id="infoForm" method="post" action="https://script.google.com/macros/s/AKfycbyMq31GtMnJPd2tTUfZe8Bg4pobpPWb1nzuerH4C7sAYnsTilrImFkzpywKKu8yvLso_g/exec" onsubmit="return false;">
+            <h3 class="tt">Client</h3>
+            <label for="name"></label>
+            <input type="text" id="name" placeholder="Nom" required oninput="votreId()"><br>
+            
+            <label for="prenom"></label>
+            <input type="text" id="prenom" placeholder="Prénom" required oninput="votreId()"><br>
+            
+            <h3 class="tt">Contacts</h3>
+            <label for="NumWa"></label>
+            <input type="tel" id="NumWa" placeholder="Numéro WhatsApp" required oninput="votreId()"><br>
+            
+            <label for="numPaie"></label>
+            <input type="tel" id="numPaie" placeholder="Numéro de paiement" required><br>
+    
+            <h3 class="tt">Votre ID</h3>
+            <h3 id="votreId"></h3>
+            
+            <button class="step-btn" type="submit" id="submitId">Soumettre</button>
+        </form>
+        </div>
+    </main>
+    <script>
+        function votreId() {
+            const nom = document.getElementById('name').value;
+            const prenom = document.getElementById('prenom').value;
+            const numWa = document.getElementById('NumWa').value;
+
+            const iD = document.getElementById('votreId');
+            iD.textContent = `${nom[0].toUpperCase()}${prenom[0].toUpperCase()}${numWa.slice(-4)}`;
+        }
+
+        async function submitForm() {
+            const name = document.getElementById('name').value;
+            const prenom = document.getElementById('prenom').value;
+            const numWa = document.getElementById('NumWa').value;
+            const numPaie = document.getElementById('numPaie').value;
+            const votreIdValue = document.getElementById('votreId').textContent;
+
+            if (response.ok) {
+                alert('Formulaire soumis avec succès!');
+                document.getElementById('infoForm').reset();
+                document.getElementById('votreId').textContent = ''; // Clear the ID display
+            } else {
+                alert('Une erreur s\'est produite lors de la soumission du formulaire. Veuillez réessayer.');
+            }
+        }
+    </script>
+        </body>
+</html>

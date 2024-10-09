@@ -1,0 +1,136 @@
+/* Style de la page */
+.rec {
+    width: 1150px; height: auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.liner {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 13px;
+}
+.info {
+    height: 65px;
+    background-color: #9200AC;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    flex: 1;
+}
+.infoAnswer {
+    height: 65px;
+    background-color: #F5F5F5;
+    color: black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex: 1;
+    font-size: 20px;
+    margin-right: 30px;
+}
+
+/* Style des moyens de paiement */
+.tt {
+    font-weight: bold;
+    color: #9200AC;
+    display: flex;
+    justify-content: center;
+}
+.info {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-right: 30px;
+    margin-left: 30px;
+    font-size: 25px;
+}
+.method {
+    background-color: #F5F5F5;
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+.method:hover, .selected {
+    background-color: #00bb00;
+    color: white;
+}
+.logo-paie {
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    border-radius: 10px;
+}
+.text {
+    display: flex;
+    justify-content: center;
+}
+.modesPaie {
+    display: flex;
+    flex-direction: column;
+}
+.modePaie {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.montant-choisi {
+    display: flex;
+    justify-content: center;
+}
+
+/*Style du numéro de paiement*/
+#numC {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #F5F5F5;
+    max-width: 1000px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+.infoBull, #ul {
+    display: flex;
+}
+.infoBull {
+    justify-content: center;
+}
+#ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+#numP {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: #9200AC;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: auto;
+}
+
+#check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
