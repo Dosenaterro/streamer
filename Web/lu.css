@@ -1,0 +1,86 @@
+body {
+    background-color: #9200AC;
+    color: black;
+    font-family: "Be vietnam pro";
+}
+p {text-align: justify;}
+/* Style the header */
+header {
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.header {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    z-index: 1;
+    width: 190px;
+    height: 42px;
+    margin-left: -300px;
+}
+/* Styling the content */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    margin-top: 20px;
+}
+.gras {font-weight: bold;}
+HR {width: 500px;}
+    /* Point section */
+.titre-up, .content {width: 950px;}
+h3 {padding-top: 10px; padding-bottom: 10px;}
+.titre-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #F5F5F5;
+    height: auto;
+    margin-top: auto;
+    font-weight: bold;
+    font-size: xx-large;
+    text-align: center;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    height: auto;
+}
+.text, .text2, .text3, .text4, .text5, .text6, .text7, .text8, .text9, .text10, .text11, .text12, .text13, .text14, .text15 {margin-top: -15px; margin-left: 50px;}
+.tab {margin-left: 30px;}
+.link {color: #9200AC}
+#back {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    color: white;
+}
+
+    /* Pour les depliants + et - */
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    float: right;
+}
+.up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lis {margin-left: 50px;}
