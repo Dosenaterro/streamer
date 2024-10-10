@@ -244,7 +244,7 @@ footer title {
 
 /* Smartphones */
     /* Portrait */
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     /* Header */
     #logo-respo {
         width: 150px;
@@ -260,6 +260,7 @@ footer title {
         width: 384px;
         height: auto;
         padding: 20px;
+        margin: 1px;
         border-radius: 20px;
         border: #9200AC 2px dashed;
         display: flex;
@@ -304,7 +305,6 @@ footer title {
     }
 
     /* Articles */
-    .articles {margin-left: -5px;}
     .article {
         padding-top: -15px;
     }
@@ -317,14 +317,14 @@ footer title {
         border-radius: 20px;
         width: 185px;
         height: auto;
-        margin-right: 15px;
+        margin-right: 10px;
     }
     
     /*Pre-foot*/
     /* Footer */
     #footer {
         height: 250px;
-        max-width: 388px;
+        max-width: 395px;
         display: flex;
         flex-direction: column;
         margin-top: 10px;
@@ -382,12 +382,12 @@ footer title {
     }
     #banner, #bannern, #bannerc, #bannerm, #banners {
         margin-left: 200px;
-        max-width: 508px;
+        max-width: 510px;
         height: 300px;
     }
 
     /* Articles */
-    .articles, .pageNum {
+    .articles {
         margin-left: 200px
     }
     .article {
@@ -402,18 +402,18 @@ footer title {
         border-radius: 20px;
         width: 225px;
         height: auto;
-        margin: 5px;
+        margin: 10px;
     }
     
     /*Pre-foot*/
     /* Footer */
     #footer {
         height: 250px;
-        max-width: 460px;
+        max-width: 395px;
         display: flex;
         flex-direction: column;
         margin-top: 10px;
-        margin-left: 210px;
+        margin-left: 0%;
     }    
     .logo-footer {
         margin: 0px;
@@ -425,6 +425,11 @@ footer title {
     }
     .footer a {
         font-size: 11px;
+    }
+    .footer-col ul {
+        display: flex;
+        flex-direction: column;
+        margin-left: -20px;
     }
     #footer .icon {
         width: 20px;
