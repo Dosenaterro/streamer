@@ -1,0 +1,208 @@
+body {
+    background-color: #F5F5F5;
+    font-family: 'Be vietnam pro';
+}
+header, main {
+    display: flex;
+    justify-content: center;
+    flex: wrap;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Présenatation de l'étape 1 */
+.forfait {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.selected {
+    background-color: #9200AC;
+    color: white;
+}
+/* Nav buttons */
+.step-btn {
+    font-family: 'Be vietnam pro';
+    font-size: 15px;
+    border: 2px solid #9200AC;
+    background-color: white;
+    color: #9200AC;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 20px;
+    font-weight: bold;
+}
+#step-btn {text-decoration: none;}
+.step-btn:hover {
+    background-color: #9200AC;
+    color: white;
+    transition: 0.5s;
+    text-decoration: none;
+}
+/* Step style */
+.steps, .step-unselected {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+.step {
+    display: flex;
+    align-items: center;
+    margin: 20px 130px;
+}
+.step-unselected {opacity: 25%;}
+.step-nom {font-weight: bold;}
+.step-num {
+    border: 0px;
+    border-radius: 100%;
+    background-color: #9200AC;
+    color: white;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+/* Type de forfait */
+#forfait-types {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #9200AC;
+    border-radius: 10px;
+    color: white;
+    text-transform: uppercase;
+    width: 270px;
+    height: 120px;
+    margin-top: 20px;
+}
+.forfait-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #9200AC;
+    border-radius: 10px;
+    width: 250px;
+    height: 50px;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+.forfait-type-title {margin: 20px;}
+.unselected {opacity: 25%;}
+
+/* Forfait-info */
+#hb {margin: 10px; font-size: 17px;}
+ol .li {
+    font-weight: bold;
+    margin: 20px;
+    padding-right: 10px;
+}
+u {stroke-width: 5px; text-underline-offset: 8px; text-decoration-thickness: 2px; color: #9200AC;}
+/*Nombre d'appareils */
+#n-appareils, #hb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#n-appareils {margin: 20px;}
+#n-appareils h3 {
+    display: flex;
+    justify-content: center;
+    background-color: #F5F5F5;
+    width: 150px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+.l-info {
+    background-color: white;
+    width: 475px;
+    height: 500px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Avantages */
+.avantages {
+    display: flex;
+    justify-content: center;
+}
+ul#avantages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+}
+#avantages li {
+    list-style: none;
+    padding: 10px;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+/* R-info */
+.r-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 475px;
+    height: 500px;
+    border-radius: 10px;
+    margin-left: 100px;
+}
+/* Tarifs */
+.tarif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-weight: bold;
+    background-color: #F5F5F5;
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+.devise {opacity: 0.5; margin-right: 10px;}
+.descript {margin-right: 150px;}
+
+.hr {
+    border: #9200AC 2px dashed;
+    width: 600px;
+    border-spacing: 100px;
+    border-radius: 10px;
+    opacity: 0.5;
+    margin-top: auto;
+}
+
+/* Rappel du choix */
+.montant-choisi, .montant {
+    display: flex;
+    align-items: center;
+}
+.montant {
+    margin: 0px 30px;
+    justify-content: center;
+    background-color: #9200AC;
+    color: white;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.montant-choisi a {
+    text-decoration: none;
+    color: black;
+}
