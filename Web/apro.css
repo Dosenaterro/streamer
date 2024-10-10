@@ -137,12 +137,6 @@ footer {margin-top: 20px;}
     }
 
     /* Main*/
-    .recs {
-        margin-left: -6px;
-    }
-    .rec {
-        width: 426px;
-    }
     .eta {
         width: 100px; height: 100px;
         transition-duration: 0.5s;
@@ -151,10 +145,5 @@ footer {margin-top: 20px;}
     .txt, .titre {font-size: 12px;}
     .image {
         margin: 15px;
-    }
-
-    /* Foter */
-    #footer {
-        max-width: 388px;
     }
 }
