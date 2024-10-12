@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streamer</title>
+    <link rel="icon" type="image/svg" href="icon/favicon.svg">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Hide the preloader when the page content is fully loaded
+            window.addEventListener("load", function() {
+                const preloader = document.querySelector(".bloc");
+                preloader.style.display = "none";
+            });
+        });
+    </script>  
+    <style>
+        body {background-color: #f5f5f5;}
+        .bloc {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 22%;
+        }
+        @keyframes rotation {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+                scale: 1.2;
+            }
+        }
+        #log {
+            background-size: contain;
+            width: 80px;
+            margin-bottom: 30px;
+            animation: rotation 1s linear infinite;
+        }
+    </style>
+</head>
+</html>
