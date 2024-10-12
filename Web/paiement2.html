@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" lang="fr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paiement</title>
+    <link rel="stylesheet" type="text/css" href="abo.css">
+    <link rel="icon" type="image/svg" href="icon/favicon.svg">
+    <script src="abo.js"></script>
+    <script src="abo2.js"></script>
+    <script src="aboInfo2.js"></script>
+    <script src="paiement.js"></script>
+    <link rel="stylesheet" href="paiement.css">
+    <link rel="stylesheet" type="text/css" href="paiement.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+    <!--Les différentes étapes de la souscription-->
+    <div class="steps">
+        <div class="step-unselected">
+            <div class="step">
+                <div class="step-num">1</div>
+                <div class="step-nom">Forfait</div>
+            </div>
+        </div>
+        <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-nom">Paiement</div>
+        </div>
+        <div class="step-unselected">
+            <div class="step">
+                <div class="step-num">3</div>
+                <div class="step-nom">Connexion</div>
+            </div>
+        </div>
+    </div>
+    </header>
+    <main>
+        <div>
+            <div class="forfait-type">
+                <div class="forfait-type-title" id="details">Détails</div>
+                <div class="forfait-type-title" id="paiement">Paiement</div>
+            </div>
+        </div>
+
+        <!--Détails de la souscription-->
+        <div class="rec" id="recDetails">
+            <h3 class="tt">Détails de la souscription</h3>
+            <div class="liner">
+                    <div class="line">
+                        <p class="info">Abonnement</p>
+                        <p class="infoAnswer" id="type"></p>
+                    </div>
+                    <div class="line" id="tdf">
+                        <p class="info" id="forfaits">Type de forfait</p>
+                        <p class="infoAnswer" id="forfait"></p>
+                    </div>
+                    <div class="line" id="tde">
+                        <p class="info" id="nEcrans">Nombre d'écrans</p>
+                        <p class="infoAnswer" id="nEcran"></p>
+                    </div>
+                    <div class="line">
+                        <p class="info">Nombre de mois</p>
+                        <p class="infoAnswer" id="nMois"></p>
+                    </div>
+                    <div class="line">
+                        <p class="info">Début</p>
+                        <p class="infoAnswer" id="debut"></p>
+                    </div>
+                    <div class="line">
+                        <p class="info">Fin</p>
+                        <p class="infoAnswer" id="fin"></p>
+                    </div>
+            </div>
+            <div class="montant-choisi">
+                <p>Total</p>
+                <div class="montant">
+                    <p class="devise"></p>
+                    <p class="prix" id="montant"></p>
+                </div>
+                <a href="abo.html" class="step-btn" id="edit" onclick="edit()">Modifier</a>
+            </div>
+        </div>
+
+        <!--Mode de paiement-->
+        <div class="rec" id="modesPaie">
+            <h3 class="tt">Mode de paiement</h3>
+            <div class="modePaie">
+                <div id="omPaie" class="method" onclick="method('om', this)">
+                    <img src="logo/om.png" class="logo-paie" alt="Orange Money">
+                    <p id="omText">Orange Money</p>
+                </div>
+                <div id="wavePaie" class="method" onclick="method('wave', this)">
+                    <img src="logo/wave.png" class="logo-paie" alt="Wave">
+                    <p id="waveText">Wave</p>
+                </div>
+            </div>
+            <div class="modePaie">
+                <div id="mtnPaie" class="method" onclick="method('mtn', this)">
+                    <img src="logo/mtn.png" class="logo-paie" alt="MTN Money">
+                    <p id="mtnText">MTN Money</p>
+                </div>    
+                <div id="moovPaie" class="method" onclick="method('moov', this)">
+                    <img src="logo/moov.png" class="logo-paie" alt="Moov (Flooz) Money">
+                    <p id="moovText">Moov (Flooz) Money</p>
+                </div>
+            </div>
+            <h3 class="tt">Numéro de paiement</h3>
+            <h2 id="numP"></h2>
+            
+            <!--Insertion du reçu-->
+            <div id="check">
+                <input type="checkbox" id="checkbox" required>
+                <p>En payant, vous acceptez nos <a href="lupcu.html" style="text-decoration: none; margin-bottom: 20px;"><span class="link">r&egrave;gles et conditions d'usages</span></a>.</p>
+            </div>
+        </div>
+        <a type="submit"href="connexion.html" id="step-btn" class="step-btn">Suivant</a>
+    </main>
+</body>
+</html>
